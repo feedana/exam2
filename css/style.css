@@ -1,25 +1,8 @@
-/* 1. Font Face Definitions (Local Fonts) */
-@font-face {
-  font-family: 'Poppins';
-  src: url('./Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('./Poppins-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('./Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-/* 2. Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -131,8 +114,36 @@ nav a {
   text-decoration: none;
   color: #333;
 }
+/* --------------------------------Issue---------------------------------------------------- */
+/* Loan badges */
+.button-container {
+    position: absolute;
+    top: 50%;               
+    left: 50%;             
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 20px;            
+}
 
-/* Right side with pink background */
+
+.loan-badge {
+    padding: 6px 14px;
+    background: rgb(14, 13, 13);
+    color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    border: none;
+    cursor: pointer;
+}
+
+.loan-badge:hover {
+    background: white;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Right side */
 .hero-right {
   flex: 1;
   background: #ffeef6;
@@ -140,8 +151,6 @@ nav a {
   align-items: center;
   justify-content: center;
   position: relative;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
 }
 
 .image-container {
@@ -149,29 +158,11 @@ nav a {
 }
 
 .image-container img {
-  width: 450px;
+  width: 900px;
   border-radius: 10px;
 }
 
-/* Loan badges */
-.loan-badge {
-  position: absolute;
-  padding: 10px 20px;
-  background: white;
-  border-radius: 30px;
-  font-weight: 600;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
-.car {
-  top: 20px;
-  left: 20px;
-}
-
-.home {
-  top: 100px;
-  right: 20px;
-}
 
 /* Customer Experience Section */
 .customer-experience {
@@ -180,7 +171,7 @@ nav a {
 }
 
 .customer-experience h2 {
-  font-size: 2rem;
+font-size: 32px;
   margin-bottom: 15px;
 }
 
@@ -238,11 +229,11 @@ nav a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 70px;
 }
 
 .partners-logos img {
-  height: 50px;
+  height: 110px;
   object-fit: contain;
 }
 
@@ -257,9 +248,8 @@ nav a {
 }
 
 .ipdc-image img {
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
-  border-radius: 8px;
 }
 
 .ipdc-content {
@@ -313,8 +303,8 @@ nav a {
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
   justify-items: center;
 }
 
@@ -324,7 +314,7 @@ nav a {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
   text-align: center;
-  max-width: 280px;
+  max-width: 400px;
   transition: transform 0.3s ease;
 }
 
@@ -393,9 +383,6 @@ nav a {
   color: #111;
 }
 
-.result-item h3 span {
-  color: #ff4fa2; 
-}
 
 .result-item p {
   font-size: 0.9rem;
@@ -509,3 +496,4 @@ nav a {
   font-weight: bold;
   color: #ff4fa2;
 }
+
