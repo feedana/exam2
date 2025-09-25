@@ -360,4 +360,152 @@ nav a {
 .service-btn:hover {
   background: #e63b8f;
 }
-/*  */
+/* Results*/
+.results {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.results-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.result-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.result-item h3 span {
+  color: #ff4fa2; 
+}
+
+.result-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+/* Newsletter */
+.newsletter {
+  background: #fff0f6;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.newsletter p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 250px;
+}
+
+.newsletter-form button {
+  background: #ff4fa2;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #e63b8f;
+}
+
+/* Footer  */
+.footer {
+  background: #fff;
+  padding: 50px 20px 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #ff4fa2;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #ff4fa2;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: right;
+  font-weight: bold;
+  color: #ff4fa2;
+}
