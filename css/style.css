@@ -392,6 +392,10 @@ font-size: 32px;
   text-transform: uppercase;
 }
 
+span {
+  color: #ff4fa2;
+}
+
 /* Newsletter */
 .newsletter {
   background: #fff0f6;
